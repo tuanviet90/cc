@@ -1,0 +1,21 @@
+//
+//  bai1cc.swift
+//  DemoClass
+//
+//  Created by VietMinSK on 9/18/14.
+//  Copyright (c) 2014 Techmaster. All rights reserved.
+//
+
+import Foundation
+
+extension Array {
+    func average() -> Double {
+        let n = self.count
+        var sum: Int = 0
+        for var i = 0; i < n;++i {
+            sum += (self[i] as Int)
+        }
+        var average: Double = Double(sum/n)
+        return average
+    }
+}
